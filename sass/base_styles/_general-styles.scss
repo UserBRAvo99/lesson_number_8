@@ -1,0 +1,23 @@
+body {
+    font-size: 14px;
+    font-family: 'Roboto',
+        sans-serif;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--second-text-gray);
+
+    background-color: var(--primary-background-color);
+
+    /* padding-top - висота для фіксованого меню (щоб контент не попав під хедер) */
+    padding-top: 80px;
+}
+
+/*  Прибираємо маркування у списків */
+.link {
+    text-decoration: none;
+}
+
+/* Прибираємо підкреслення у посилань */
+.list {
+    list-style-type: none;
+}

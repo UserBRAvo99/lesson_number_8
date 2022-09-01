@@ -1,0 +1,37 @@
+/* Основні кольори - 
+Основний фон #FFFFFF
+Фон #2F303A
+Фон секцій/кнопок - другорядний  #F5F4FA
+Акцент #2196F3
+Другорядний фон #757575
+Текст білий #FFFFFF;
+Текст чорний #212121
+Текст сірий #212121
+Текст адреси rgba(255, 255, 255, 0.6); */
+/* font-family: 'Raleway',
+sans-serif;
+font-family: 'Roboto',
+sans-serif; */
+/* перемінні для основних кольорів */
+:root {
+    --primary-background-color: #FFFFFF;
+    --second-primary-background: #2F303A;
+    --background-section-color: #F5F4FA;
+    --background-color: #757575;
+    --accent-color: #2196F3;
+    --primary-text-white: #FFFFFF;
+    --primary-text-black: #212121;
+    --second-text-gray: #757575;
+    --second-text-gray-alfa-chenel: rgba(255, 255, 255, 0.6);
+    --border-color: #EEEEEE;
+    --border-bottom-color-header: #ECECEC;
+    --background-button-hover: #188CE8;
+    --features-title-background-before: #F5F4FA;
+    --clients-link-color: #AFB1B8;
+    --team-link-color: #AFB1B8;
+    --background-soc-link-footer: rgba(255, 255, 255, 0.1);
+    --background-gallery-item-hover: rgba(33, 150, 243, 0.9);
+    --background-backdrop: rgba(0, 0, 0, 0.2);
+    --background-modal-window: #FFFFFF;
+    --background-case_bloc_title: rgba(47, 48, 58, 0.8);
+}

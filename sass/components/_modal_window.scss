@@ -1,0 +1,278 @@
+/* модальне вікно */
+.modal_window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 528px;
+    min-height: 581px;
+
+    background-color: var(--background-modal-window);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+            &_form {
+                display: flex;
+                flex-direction: column;
+            }
+}
+
+/* анімація модального вікна на бекдропі(починається з закритого стану бекдропу до відкритого) */
+/* .backdrop.is_hidden .modal_window {
+    transform: scale(0.9) translate(-50%, -50%);
+} */
+
+
+/* Форма в модальному вікні */
+.form_title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+
+    color: var(--primary-text-black);
+
+    margin-bottom: 12px;
+}
+
+.label_email,
+.label_comment,
+.label_name,
+.label_tell {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+
+    margin-bottom: 4px;
+}
+
+.modal_form_input_name,
+.modal_form_input_tell,
+.modal_form_input_email,
+.textarea_comment {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal_form_input_email,
+.modal_form_input_tell,
+.modal_form_input_name {
+    padding: 11px 11px 11px 42px;
+    width: 100%;
+}
+
+.bloc_input_email,
+.bloc_input_tell,
+.bloc_input_name {
+    margin-bottom: 10px;
+}
+
+.bloc_comment {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.textarea_comment {
+    display: block;
+    resize: none;
+    &::placeholder {
+            font-size: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.01em;
+    
+            color: rgba(117, 117, 117, 0.5);
+    
+            padding: 12px 16px;
+        }
+                .modal_window_form &:hover,
+                .modal_window_form &:focus {
+                    border-color: var(--accent-color);
+                }
+}
+
+
+
+
+/* Іконки до форми */
+
+.bloc_input_tell,
+.bloc_input_email,
+.bloc_input_name {
+    position: relative;
+    color: var(--primary-text-black);
+}
+
+.bloc_icone_form_name,
+.bloc_icone_form_tell,
+.bloc_icone_form_email {
+    display: block;
+    position: absolute;
+    fill: currentColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bloc_icone_form_name {
+    top: 14px;
+    left: 15px;
+}
+
+.bloc_icone_form_tell {
+    top: 13px;
+    left: 14px;
+}
+
+.bloc_icone_form_email {
+    top: 14px;
+    left: 13px;
+}
+
+.bloc_input_name:hover .modal_form_input_name,
+.bloc_input_name:focus .modal_form_input_name {
+    border-color: var(--accent-color);
+}
+
+.bloc_input_tell:hover .modal_form_input_tell,
+.bloc_input_tell:focus .modal_form_input_tell {
+    border-color: var(--accent-color);
+}
+
+.bloc_input_email:hover .modal_form_input_email,
+.bloc_input_email:focus .modal_form_input_email {
+    border-color: var(--accent-color);
+}
+
+.bloc_input_name:hover,
+.bloc_input_name:focus {
+    color: var(--accent-color);
+}
+
+.bloc_input_tell:hover,
+.bloc_input_tell:focus {
+    color: var(--accent-color);
+}
+
+.bloc_input_email:hover,
+.bloc_input_email:focus {
+    color: var(--accent-color);
+}
+
+.bloc_checkbox {
+    display: inline-flex;
+    justify-content: center;
+
+}
+
+.bloc_checkbox {
+    display: inline-flex;
+    margin-bottom: 30px;
+
+    cursor: pointer;
+}
+
+.label_checkbox,
+.checkbox_link {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.checkbox_modal_form {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.checkbox_bloc {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 16px;
+    height: 15px;
+    border: solid 2px var(--primary-text-black);
+    border-radius: 2px;
+    border-radius: 2px;
+    margin-right: 7px;
+}
+
+.checkbox_modal_form:checked+.checkbox_bloc {
+    background-color: var(--accent-color);
+    border: solid 2px var(--accent-color);
+}
+
+.checkbox_link {
+    margin-left: 5px;
+    color: var(--accent-color);
+}
+
+
+
+
+.window_form_button {
+    width: 200px;
+    min-height: 50px;
+    padding: 10px 52px;
+
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--primary-text-white);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.window_form_button:hover,
+.window_form_button:focus {
+    background: var(--background-button-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+/* Закриття модального вікна */
+.modal_window_close {
+    position: absolute;
+    display: flex;
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: space-around;
+
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--background-modal-window);
+
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    fill: currentColor;
+}
+
+.modal_window_close:hover {
+    color: var(--accent-color);
+}
