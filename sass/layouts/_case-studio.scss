@@ -1,57 +1,67 @@
+.case {
+    display: none;
+}
 /* Блок справ */
 /* Поєднані стилі для двух заголовків блоків case & team  */
-.case {
-    padding-top: 0;
-}
-.case__list {
-    display: flex;
-    flex-wrap: wrap;
-    &__item {
-            margin-right: 30px;
-            &:nth-child(3n) {
-                margin-right: 0;
+@media screen and (min-width: 1200px) {
+    .case {
+            display: flex;
+            padding-top: 0;
+        }
+    
+        .case__list {
+            display: flex;
+            flex-wrap: wrap;
+    
+            &__item {
+                margin-right: 30px;
+    
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+            }
+        }
+    
+        .case__title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.16;
+            text-align: center;
+            color: var(--primary-text-black);
+    
+            margin-bottom: 50px;
+        }
+    
+    
+    
+        .case__list__item__wrapper {
+            display: block;
+            position: relative;
+        }
+    
+        .case__position__bloc {
+            position: absolute;
+            bottom: 3px;
+            left: 0;
+    
+            width: 100%;
+            min-height: 70px;
+    
+            background: var(--background-case_bloc_title);
+    
+            &__title {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+    
+                font-weight: 700;
+                line-height: 1.14;
+                text-transform: uppercase;
+    
+                color: var(--primary-text-white);
+    
+                white-space: nowrap;
             }
         }
 }
-.case__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    color: var(--primary-text-black);
-
-    margin-bottom: 50px;
-}
-
-
-
-.case__list__item__wrapper {
-    display: block;
-    position: relative;
-}
-
-.case__position__bloc {
-    position: absolute;
-    bottom: 3px;
-    left: 0;
-
-    width: 100%;
-    min-height: 70px;
-
-    background: var(--background-case_bloc_title);
-    &__title {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-    
-            font-weight: 700;
-            line-height: 1.14;
-            text-transform: uppercase;
-    
-            color: var(--primary-text-white);
-    
-            white-space: nowrap;
-        }
-}
-
