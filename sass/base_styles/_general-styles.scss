@@ -11,6 +11,11 @@ body {
     /* padding-top - висота для фіксованого меню (щоб контент не попав під хедер) */
     padding-top: 80px;
 }
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
 
 /*  Прибираємо маркування у списків */
 .link {
@@ -21,3 +26,7 @@ body {
 .list {
     list-style-type: none;
 }
+
+    .case {
+        display: none;
+    }

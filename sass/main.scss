@@ -4,20 +4,20 @@
 @import './utils/hidden';
 @import './components/container';
 // Хедер - меню,навігація (застосовується для всіх сторінок)
-@import './layouts/header';
+// @import './layouts/header';
 @import './components/active-page';
 // Студія - сторінка studio
-@import './layouts/hero-studio';
+// @import './layouts/hero-studio';
 @import './layouts/features-studio';
 @import './layouts/case-studio';
 @import './layouts/team-studio';
-@import './layouts/clients-studio';
+// @import './layouts/clients-studio';
 // Футер - адреса,контакти,посилання та форма (застосовується для всіх сторінок)
-@import './layouts/footer';
+// @import './layouts/footer';
 // Портфоліо - сторінка portfolio
-@import './layouts/filter-portfolio.scss';
-@import './layouts/gallery-portfolio.scss';
+// @import './layouts/filter-portfolio.scss';
+// @import './layouts/gallery-portfolio.scss';
 // backdrop
-@import './components/backdrop';
+// @import './components/backdrop';
 // Модальне вікно
-@import './components/modal_window';
+// @import './components/modal_window';
