@@ -46,8 +46,9 @@
         }
 }
 
+
 .header__menu__btn {
-    display: inline-flex;
+    display: flex;
     margin: 0;
     padding: 0;
     border: none;
@@ -55,22 +56,19 @@
     margin-left: auto;
     cursor: pointer;
 }
-// .menu__btn__icon__close {
-//     display: none;
-// }
-// .header__menu__btn.is-open .menu__btn__icon__close {
-//     display: block;
-// }
-// .header__menu__btn.is-open .menu__btn__icon__open {
-//     display: none;
-// }
+.header__mobile__menu {
+    display: none;
+}
+.header__mobile__menu.is-open  {
+    display: block;
+}
 
 .header__mobile__menu {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100vw;
-    // height: 100vh;
+    height: 100vh;
     background-color: var(--primary-background-color);
 }
 
