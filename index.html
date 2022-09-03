@@ -21,12 +21,25 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container__nav">
         <nav class="header__nav">
           <a href="./index.html" class="header__logo link">
             <span class="header__logo__firstp">Web</span>Studio
           </a>
+          <button type="button" class="header__menu__btn js-open-menu">
+            <svg
+              class="header__menu__btn__icon"
+              aria-label="перемикач мобільного меню"
+              width="40"
+              height="40"
+            >
+              <use
+                href="./images/icons/symbol-defs.svg#icon-menu"
+                class="menu__btn__icon__open"
+              ></use>
+            </svg>
+          </button>
           <ul class="header__list list">
             <li class="header__item">
               <a href="./index.html" class="header__link link active_page">Студія</a>
@@ -58,7 +71,41 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <div class="header__mobile__menu js-menu-container" id="mobile-menu">
+        <button class="header__menu__btn js-close-menu">
+          <svg
+            class="header__menu__btn__icon"
+            aria-label="перемикач мобільного меню"
+            width="40"
+            height="40"
+          >
+            <use
+              href="./images/icons/symbol-defs.svg#icon-close"
+              class="menu__btn__icon__close"
+            ></use>
+          </svg>
+        </button>
+        <ul class="list">
+          <li class="">
+            <a href="./index.html" class="">Студія</a>
+          </li>
+          <li class="">
+            <a href="./portfolio.html" class="link">Портфоліо</a>
+          </li>
+          <li class="">
+            <a href="#" class="link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="list">
+          <li class="">
+            <a href="mailto:info@devstudio.com" class="link"> info@devstudio.com</a>
+          </li>
+          <li class="">
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <main class="main">
       <section class="hero">
         <div class="container">
@@ -543,5 +590,6 @@
       </div>
     </div> -->
     <script src="./js/model.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

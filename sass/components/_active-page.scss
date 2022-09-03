@@ -1,16 +1,39 @@
 
 
 .active_page {
-    color: var(--accent-color);
-    &::after {
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 4px;
-            left: 0px;
-            top: 77px;
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .active_page {
+            color: var(--accent-color);
     
-            background: var(--accent-color);
-            border-radius: 2px;
+            &::after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 4px;
+                left: 0px;
+                top: 77px;
+    
+                background: var(--accent-color);
+                border-radius: 2px;
+            }
+        }
+}
+@media screen and (min-width: 1200px) {
+    .active_page {
+            color: var(--accent-color);
+    
+            &::after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 4px;
+                left: 0px;
+                top: 77px;
+    
+                background: var(--accent-color);
+                border-radius: 2px;
+            }
         }
 }
