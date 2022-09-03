@@ -520,4 +520,253 @@ img {
   .clients_link {
     width: 170px;
   }
+}
+/* Футер для сторінок Студія та Прортфоліо */
+/* footer - Підвал веб-сайту */
+.footer {
+  background-color: var(--second-primary-background);
+  padding: 60px 0;
+}
+
+.address_section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Лого */
+.footer_logo {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primary-text-white);
+  margin-bottom: 20px;
+}
+.footer_logo_firstp {
+  color: var(--accent-color);
+}
+
+/* Адреса */
+.address_map {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--primary-text-white);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address_link {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--second-text-gray-alfa-chenel);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address_item {
+  margin-bottom: 10px;
+}
+
+.address_map:hover,
+.address_map:focus,
+.address_link:hover,
+.address_link:focus {
+  color: var(--accent-color);
+}
+
+/* footer частина з посиланнями на соц мережі */
+.footer_title_soc {
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--primary-text-white);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer_list_soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer_soc_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background: var(--background-soc-link-footer);
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: var(--primary-background-color);
+  fill: currentColor;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer_soc_link:hover, .footer_soc_link:focus {
+  background-color: var(--accent-color);
+}
+
+/* Форма для підписки в футері */
+.bloc_form_subscription {
+  text-align: center;
+}
+
+.title_subscription {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-white);
+  margin-bottom: 20px;
+}
+
+.email_subscription {
+  width: 100%;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--second-primary-background);
+  margin-bottom: 20px;
+}
+
+.buttom_subscription {
+  padding: 10px 28px;
+  min-height: 50px;
+  background: var(--accent-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 0.53;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--primary-text-white);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: auto;
+  margin-right: auto;
+}
+.buttom_subscription:hover, .buttom_subscription:focus {
+  background: var(--background-button-hover);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.icon_form_button {
+  fill: var(--primary-text-white);
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .address_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding-left: 61px;
+    padding-right: 74px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  .address_section {
+    display: block;
+    width: 232px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 0;
+  }
+  .address_soc_link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 206px;
+  }
+  .footer_list_soc {
+    margin-bottom: 0;
+  }
+  .email_subscription {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container_footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .address_wrapper {
+    padding: 0;
+    margin-bottom: 0;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .address_section {
+    margin-right: 70px;
+    text-align: start;
+  }
+  .bloc_form_subscription {
+    text-align: start;
+  }
+  .buttom_subscription {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .form_subscription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .email_subscription {
+    margin-bottom: 0;
+    width: 358px;
+    margin-right: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */

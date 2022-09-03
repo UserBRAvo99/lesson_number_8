@@ -5,17 +5,14 @@
     padding: 60px 0;
 }
 
-.container_footer {
-    display: flex;
-    align-items: baseline;
-}
-
 .address_section {
-    margin-right: 70px;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 /* Лого */
 .footer_logo {
+    display: block;
     font-family: 'Raleway',
         sans-serif;
     font-weight: 700;
@@ -23,14 +20,11 @@
     line-height: 1.19;
     color: var(--primary-text-white);
 
-    display: inline-block;
-    margin-bottom: 20px;
     &_firstp {
             color: var(--accent-color);
         }
+    margin-bottom: 20px;
 }
-
-
 
 /* Адреса */
 
@@ -38,7 +32,6 @@
     font-style: normal;
     line-height: 1.71;
     color: var(--primary-text-white);
-
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -54,9 +47,6 @@
     margin-bottom: 10px;
 }
 
-.address_list .address_item:last-child {
-    margin-bottom: 0;
-}
 
 .address_map:hover,
 .address_map:focus,
@@ -66,29 +56,25 @@
 }
 
 /* footer частина з посиланнями на соц мережі */
-.address_soc_link {
-    padding-top: 12px;
-}
+
 
 .footer_title_soc {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
-    font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 
     color: var(--primary-text-white);
 
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .footer_list_soc {
     display: flex;
-    min-width: 206px;
-    min-height: 44px;
     gap: 10px;
+
+    margin-bottom: 60px;
+    justify-content: center;
 }
 
 .footer_soc_link {
@@ -114,11 +100,9 @@
 
 /* Форма для підписки в футері */
 
-.form_subscription {
-    display: flex;
-    flex-direction: row;
+.bloc_form_subscription {
+    text-align: center;
 }
-
 
 .title_subscription {
     font-weight: 700;
@@ -133,15 +117,13 @@
 }
 
 .email_subscription {
-    width: 358px;
+    width: 100%;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--second-primary-background);
-
-    margin-right: 12px;
-
+    margin-bottom: 20px;
 }
 
 .buttom_subscription {
@@ -176,6 +158,8 @@
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
                 border-radius: 4px;
             }
+            margin-left: auto;
+            margin-right: auto;
 }
 
 .icon_form_button {
@@ -183,6 +167,64 @@
     margin-left: 10px;
 }
 
-.bloc_form_subscription {
-    margin-left: auto;
+@media screen and (min-width: 768px) {
+    .address_wrapper {
+        display: flex;
+        align-items: baseline;
+        padding-left: 61px;
+        padding-right: 74px;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    .address_section {
+        display: block;
+        width: 232px;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+    .address_soc_link {
+        display: flex;
+        flex-direction: column;
+        width: 206px;
+
+    }
+    .footer_list_soc {
+        margin-bottom: 0;
+    }
+
+    .email_subscription {
+        width: 450px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container_footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .address_wrapper {
+        padding: 0;
+        margin-bottom: 0;
+        justify-content: left;
+    }
+    .address_section {
+        margin-right: 70px;
+        text-align: start;
+    }
+    .bloc_form_subscription {
+        text-align: start;
+    }
+    .buttom_subscription {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .form_subscription {
+        display: flex;
+    }
+    .email_subscription {
+        margin-bottom: 0;
+        width: 358px;
+        margin-right: 12px;
+    }
 }
