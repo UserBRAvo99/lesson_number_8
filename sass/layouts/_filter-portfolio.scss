@@ -1,14 +1,27 @@
+.gallery {
+    padding-top: 60px;
+}
+
 /* Блок фільтер */
 .filter_list {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    max-width: 325px;
+    flex-wrap: wrap;
     .filter_item {
             margin-right: 8px;
-        }
-        &:last-child {
-            margin-right: 0;
-        }
+            margin-bottom: 15px;
+            &:nth-child(1n+4) {
+                    margin-bottom: 0;
+                }
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+            &:last-child {
+                    margin-right: 0;
+                }
+    }
 }
 
 .filter_button {
@@ -37,5 +50,38 @@
         color: var(--primary-text-white);
         background-color: var(--accent-color);
         cursor: pointer;
+    }
+}
+@media screen and (min-width: 480px) {
+    .filter_list {
+            .filter_item {
+                &:nth-child(1n+4) {
+                    margin-bottom: 0;
+                    margin-right: 8px;
+                }
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+}
+@media screen and (min-width: 768px) {
+    .filter_list {
+        justify-content: center;
+        max-width: 100%;
+        flex-wrap: nowrap;
+        .filter_item {
+            margin-bottom: 0;
+            &:nth-child(1n+4) {
+                    margin-bottom: 0;
+                    margin-right: 8px;
+                }
+                &:nth-child(3n) {
+                    margin-right: 8px;
+                }
+        }
     }
 }

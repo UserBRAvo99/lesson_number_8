@@ -1190,20 +1190,34 @@ img {
     margin-right: 12px;
   }
 }
+.gallery {
+  padding-top: 60px;
+}
+
 /* Блок фільтер */
 .filter_list {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  max-width: 325px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .filter_list .filter_item {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
-.filter_list:last-child {
+.filter_list .filter_item:nth-child(1n+4) {
+  margin-bottom: 0;
+}
+.filter_list .filter_item:nth-child(4n) {
+  margin-right: 0;
+}
+.filter_list .filter_item:last-child {
   margin-right: 0;
 }
 
@@ -1231,6 +1245,165 @@ img {
   cursor: pointer;
 }
 
+@media screen and (min-width: 480px) {
+  .filter_list .filter_item:nth-child(1n+4) {
+    margin-bottom: 0;
+    margin-right: 8px;
+  }
+  .filter_list .filter_item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .filter_list .filter_item:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter_list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .filter_list .filter_item {
+    margin-bottom: 0;
+  }
+  .filter_list .filter_item:nth-child(1n+4) {
+    margin-bottom: 0;
+    margin-right: 8px;
+  }
+  .filter_list .filter_item:nth-child(3n) {
+    margin-right: 8px;
+  }
+}
+/* Блок галереї */
+.gallery_list {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.gallery_list .gallery_item {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.gallery_list .gallery_item:last-child {
+  margin-bottom: 0;
+}
+
+.gallery_link {
+  display: block;
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* блок з ефектом ховеру на галереї портфоліо */
+.gallery_img_bloc {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.img_bloc_hidden {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-gallery-item-hover);
+  padding: 63px 24px;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img_paragraf_hidden {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--primary-text-white);
+}
+
+.gallery_link:hover .img_bloc_hidden,
+.gallery_link:focus .img_bloc_hidden {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.gallery_link:hover,
+.gallery_link:focus {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.gallery_img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery_text {
+  display: block;
+  border: 1px solid var(--border-color);
+  border-top: 0;
+  padding: 20px 24px;
+}
+
+.gallery_title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-black);
+  margin-bottom: 4px;
+}
+
+.gallery_title_description {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--second-text-gray);
+}
+
+@media screen and (min-width: 768px) {
+  .gallery_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .gallery_list .gallery_item {
+    width: 354px;
+  }
+  .gallery_link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .gallery_link .gallery_text {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery_link .gallery_text {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+}
 /* backdrop - задній фон модального вікна */
 .backdrop {
   /* фіксована позиція вьюпорту */
