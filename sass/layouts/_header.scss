@@ -17,10 +17,6 @@
 
 /* Хедер для сторінок Студія та Прортфоліо */
 /* Шапка */
-// .header__container__nav {
-//     // display: flex;
-//     // align-items: center;
-// }
 
 .header__nav {
     display: flex;
@@ -47,33 +43,59 @@
 }
 
 
-.header__menu__btn {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    margin-left: auto;
-    cursor: pointer;
-}
-.header__mobile__menu {
-    display: none;
-}
-.header__mobile__menu.is-open  {
-    display: block;
-}
-
-.header__mobile__menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--primary-background-color);
-}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .header__container__nav {
+//     // display: flex;
+//     // align-items: center;
+// }
 
 
 .header__list, .header__contacts__list {

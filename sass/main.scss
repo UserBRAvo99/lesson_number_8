@@ -5,6 +5,7 @@
 @import './components/container';
 // Хедер - меню,навігація (застосовується для всіх сторінок)
 @import './layouts/header';
+@import './components/mobile-menu-winbow';
 @import './components/active-page';
 // Студія - сторінка studio
 @import './layouts/hero-studio';
