@@ -146,12 +146,12 @@
 
 .modal_form_input_tell:hover + .bloc_icone_form_tell .icone_modal_form_tell,
 .modal_form_input_tell:focus + .bloc_icone_form_tell .icone_modal_form_tell {
-    color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .modal_form_input_email:hover + .bloc_icone_form_email .icone_modal_form_email,
 .modal_form_input_email:focus + .bloc_icone_form_email .icone_modal_form_email {
-    color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 

@@ -395,7 +395,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--second-text-gray);
 }
-.mobile__menu__contact__list__item .contact__mail__link:hover {
+.mobile__menu__contact__list__item .contact__mail__link:hover, .mobile__menu__contact__list__item .contact__mail__link:focus {
   color: var(--accent-color);
 }
 
@@ -535,14 +535,28 @@ img {
     background-repeat: no-repeat;
   }
 }
-@media screen and (min-width: 768px) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    width: 768px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/img-hero-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/img-hero-mobile@2x.jpg");
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    width: 100%;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-hero-tablet.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero-tablet.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/img-hero-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/img-hero-tablet@2x.jpg");
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 769px) {
   .hero {
     width: 100%;
     height: 600px;
@@ -560,12 +574,26 @@ img {
     margin-right: auto;
   }
 }
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/img-hero-desk@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/img-hero-desk@2x.jpg");
+    background-size: cover;
+  }
+}
 @media screen and (min-width: 1600px) {
   .hero {
     width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-hero-desk.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero-desk.jpg);
+  }
+}
+@media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/img-hero-desk@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/img-hero-desk@2x.jpg");
+    background-size: cover;
   }
 }
 .features__list {
@@ -1626,12 +1654,12 @@ img {
 
 .modal_form_input_tell:hover + .bloc_icone_form_tell .icone_modal_form_tell,
 .modal_form_input_tell:focus + .bloc_icone_form_tell .icone_modal_form_tell {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .modal_form_input_email:hover + .bloc_icone_form_email .icone_modal_form_email,
 .modal_form_input_email:focus + .bloc_icone_form_email .icone_modal_form_email {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .bloc_checkbox {

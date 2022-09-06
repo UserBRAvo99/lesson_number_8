@@ -63,14 +63,39 @@
         background-repeat: no-repeat;
     }
 }
-@media screen and (min-width: 768px) {
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
     .hero {
-        width: 768px;
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/img-hero-mobile@2x.jpg');
+        background-size: cover;
+    }
+}
+
+
+@media screen and (min-width: 481px) {
+    .hero {
+        width: 100%;
         background-image: 
         linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/img-hero-tablet.jpg);
     }
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/img-hero-tablet@2x.jpg');
+                background-size: cover;
+            }
+        }
 }
-@media screen and (min-width: 1200px) {
+
+
+
+
+@media screen and (min-width: 769px) {
     .hero {
         width: 100%;
         height: 600px;
@@ -87,6 +112,15 @@
                     margin-right: auto;
             }
     }
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/img-hero-desk@2x.jpg');
+                background-size: cover;
+            }
+        }
 }
 @media screen and (min-width: 1600px) {
     .hero {
@@ -95,4 +129,13 @@
         background-image:
             linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero-desk.jpg);
     }
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/img-hero-desk@2x.jpg');
+                background-size: cover;
+            }
+        }
 }
