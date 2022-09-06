@@ -1,7 +1,6 @@
 /* Блок галереї */
 .gallery_list {
     width: 100%;
-    margin-bottom: 60px;
     .gallery_item {
             width: 100%;
             margin-bottom: 30px;
@@ -102,6 +101,9 @@
     }
 }
 @media screen and (min-width: 1200px) {
+    .gallery_item {
+            min-width: 370px;
+        }
     .gallery_link {
             .gallery_text {
                 flex-grow: 0;

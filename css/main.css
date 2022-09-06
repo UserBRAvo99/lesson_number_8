@@ -98,7 +98,7 @@ img {
 @media screen and (min-width: 1200px) {
   /* padding-top - висота для фіксованого меню (щоб контент не попав під хедер) */
   body {
-    padding-top: 80px;
+    padding-top: 80.83px;
   }
 }
 .hidden_title {
@@ -121,6 +121,11 @@ img {
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) {
@@ -390,6 +395,9 @@ img {
   letter-spacing: 0.02em;
   color: var(--second-text-gray);
 }
+.mobile__menu__contact__list__item .contact__mail__link:hover {
+  color: var(--accent-color);
+}
 
 .mobile__menu__soc__list {
   display: -webkit-box;
@@ -563,8 +571,6 @@ img {
 .features__list {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 .features__list__item {
   display: -webkit-box;
@@ -575,6 +581,9 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 30px;
+}
+.features__list__item:last-child {
+  margin-bottom: 0;
 }
 
 .features__icon__svg {
@@ -619,8 +628,6 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
   .features__list__item {
     display: -webkit-box;
@@ -638,6 +645,10 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .features__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -647,8 +658,6 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
   .features__list__item {
     display: -webkit-box;
@@ -673,7 +682,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 94px;
+    padding-top: 0;
     padding-bottom: 94px;
   }
   .case__list {
@@ -752,7 +761,7 @@ img {
   margin-bottom: 30px;
 }
 .team .team_item:last-child {
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 
 .team_text {
@@ -811,18 +820,15 @@ img {
 
 /* Дя того щоб змінити колір іконки при наведенні, треба вказити ховер на посилання і замінити колір іконки. Також можна наслідувати колір батька через fill-currentColor (колір посилання без ховеру) і змінити колір фону та іконки через клас посилання(не прописувати код окремо) */
 @media screen and (min-width: 768px) {
-  .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   .team_list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .team_list .team_item {
     width: 354px;
@@ -856,11 +862,6 @@ img {
   }
 }
 /* Секція кліентів */
-.clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .clients_title {
   font-weight: 700;
   font-size: 28px;
@@ -934,6 +935,10 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .clients_item {
     margin-bottom: 0;
   }
@@ -987,6 +992,9 @@ img {
 .address_item {
   margin-bottom: 10px;
 }
+.address_item:last-child {
+  margin-bottom: 0;
+}
 
 .address_map:hover,
 .address_map:focus,
@@ -996,6 +1004,10 @@ img {
 }
 
 /* footer частина з посиланнями на соц мережі */
+.address_soc_link {
+  margin-bottom: 60px;
+}
+
 .footer_title_soc {
   font-weight: 700;
   line-height: 16px;
@@ -1010,7 +1022,6 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  margin-bottom: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1112,11 +1123,8 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    padding-left: 61px;
-    padding-right: 74px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-bottom: 60px;
   }
   .address_section {
@@ -1280,7 +1288,6 @@ img {
 /* Блок галереї */
 .gallery_list {
   width: 100%;
-  margin-bottom: 60px;
 }
 .gallery_list .gallery_item {
   width: 100%;
@@ -1398,6 +1405,9 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
+  .gallery_item {
+    min-width: 370px;
+  }
   .gallery_link .gallery_text {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
@@ -1595,27 +1605,32 @@ img {
 .bloc_icone_form_name {
   top: 14px;
   left: 15px;
+  cursor: pointer;
 }
 
 .bloc_icone_form_tell {
   top: 13px;
   left: 14px;
+  cursor: pointer;
 }
 
 .bloc_icone_form_email {
   top: 14px;
   left: 13px;
+  cursor: pointer;
 }
 
-.bloc_input_name:hover .bloc_icone_form_name {
+.modal_form_input_name:hover + .bloc_icone_form_name .icone_modal_form_name, .modal_form_input_name:focus + .bloc_icone_form_name .icone_modal_form_name {
+  fill: var(--accent-color);
+}
+
+.modal_form_input_tell:hover + .bloc_icone_form_tell .icone_modal_form_tell,
+.modal_form_input_tell:focus + .bloc_icone_form_tell .icone_modal_form_tell {
   color: var(--accent-color);
 }
 
-.bloc_input_tell:hover .bloc_icone_form_tell {
-  color: var(--accent-color);
-}
-
-.bloc_input_email:hover .icone_modal_form_email {
+.modal_form_input_email:hover + .bloc_icone_form_email .icone_modal_form_email,
+.modal_form_input_email:focus + .bloc_icone_form_email .icone_modal_form_email {
   color: var(--accent-color);
 }
 

@@ -65,7 +65,7 @@
 
 .mobile__menu__contact__list__item {
     margin-bottom: 32px;
-    &:last-child{
+    &:last-child {
         margin-bottom: 64px;
     }
         .contact__tel__link {
@@ -81,7 +81,10 @@
             font-size: 24px;
             line-height: 28px;
             letter-spacing: 0.02em;
-            color: var(--second-text-gray)
+            color: var(--second-text-gray);
+            &:hover {
+                color: var(--accent-color);
+            }
         }
 }
 .mobile__menu__soc__list {

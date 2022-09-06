@@ -1,8 +1,4 @@
 /* Секція кліентів */
-.clients {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
 
 .clients_title {
     font-weight: 700;
@@ -68,6 +64,10 @@
     }
 }
 @media screen and (min-width: 1200px) {
+    .clients {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     .clients_item {
         margin-bottom: 0;
     }

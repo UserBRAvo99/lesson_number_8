@@ -45,6 +45,9 @@
 
 .address_item {
     margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 
@@ -56,7 +59,9 @@
 }
 
 /* footer частина з посиланнями на соц мережі */
-
+.address_soc_link {
+    margin-bottom: 60px;
+}
 
 .footer_title_soc {
     font-weight: 700;
@@ -72,8 +77,6 @@
 .footer_list_soc {
     display: flex;
     gap: 10px;
-
-    margin-bottom: 60px;
     justify-content: center;
 }
 
@@ -171,9 +174,7 @@
     .address_wrapper {
         display: flex;
         align-items: baseline;
-        padding-left: 61px;
-        padding-right: 74px;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-bottom: 60px;
     }
     .address_section {

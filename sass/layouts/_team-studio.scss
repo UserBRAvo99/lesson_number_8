@@ -26,7 +26,7 @@
             margin-bottom: 30px;
         }
                 & .team_item:last-child {
-                    margin-bottom: 60px;
+                    margin-bottom: 0;
                 }
 }
 
@@ -83,14 +83,10 @@
 /* Дя того щоб змінити колір іконки при наведенні, треба вказити ховер на посилання і замінити колір іконки. Також можна наслідувати колір батька через fill-currentColor (колір посилання без ховеру) і змінити колір фону та іконки через клас посилання(не прописувати код окремо) */
 
 @media screen and (min-width: 768px) {
-    .team {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
     .team_list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
             .team_item {
                     width: 354px;
                 }

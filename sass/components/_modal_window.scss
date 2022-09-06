@@ -110,7 +110,6 @@
 .bloc_input_email,
 .bloc_input_name {
     position: relative;
-    // color: var(--primary-text-black);
 }
 
 .bloc_icone_form_name,
@@ -127,27 +126,34 @@
 .bloc_icone_form_name {
     top: 14px;
     left: 15px;
+    cursor: pointer;
 }
 
 .bloc_icone_form_tell {
     top: 13px;
     left: 14px;
+    cursor: pointer;
 }
 
 .bloc_icone_form_email {
     top: 14px;
     left: 13px;
+    cursor: pointer;
+}
+.modal_form_input_name:hover + .bloc_icone_form_name .icone_modal_form_name, .modal_form_input_name:focus +.bloc_icone_form_name .icone_modal_form_name {
+    fill: var(--accent-color);
 }
 
-.bloc_input_name:hover .bloc_icone_form_name {
+.modal_form_input_tell:hover + .bloc_icone_form_tell .icone_modal_form_tell,
+.modal_form_input_tell:focus + .bloc_icone_form_tell .icone_modal_form_tell {
     color: var(--accent-color);
 }
-.bloc_input_tell:hover .bloc_icone_form_tell {
+
+.modal_form_input_email:hover + .bloc_icone_form_email .icone_modal_form_email,
+.modal_form_input_email:focus + .bloc_icone_form_email .icone_modal_form_email {
     color: var(--accent-color);
 }
-.bloc_input_email:hover .icone_modal_form_email {
-    color: var(--accent-color);
-}
+
 
 
 .bloc_checkbox {

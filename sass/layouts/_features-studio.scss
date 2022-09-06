@@ -1,14 +1,15 @@
 .features__list {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
 
     &__item {
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
         }
+    &__item:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .features__icon__svg {
@@ -44,8 +45,6 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            padding-top: 60px;
-            padding-bottom: 60px;
             &__item {
                 display: flex;
                 flex-direction: column;
@@ -58,12 +57,14 @@
                 }
 }
 @media screen and (min-width: 1200px) {
+    .features {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     .features__list {
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-between;
-            padding-top: 60px;
-            padding-bottom: 60px;
     
             &__item {
                 display: flex;
